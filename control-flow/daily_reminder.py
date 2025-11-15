@@ -2,7 +2,7 @@
 # Prompt the user for a single task
 task = input("Enter your task: ")
 # Prompt for the task's priority 
-priority = input("Enter the priority level (high/medium/low): ").lower()
+priority = input("Enter the priority level (high/medium/low):").lower()
 # Ask if the task is time-bound
 time_bound = input("Is it time-bound? (yes/no): ").lower()
 # use match-case to handle different priorities
