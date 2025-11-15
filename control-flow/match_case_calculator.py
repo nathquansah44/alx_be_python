@@ -3,7 +3,7 @@
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))    
 # ask the user to choose an operation
-operation = input("Choose an operation (+, -, *, /): ") 
+operation = input("Choose the operation (+, -, *, /): ") 
 # Perform the operation using match case
 match operation:
     case "+":
@@ -23,4 +23,3 @@ match operation:
             print(f"The result is {result}")
     case _:
         print("Invalid operation selected.")
-        
