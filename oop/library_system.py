@@ -1,6 +1,4 @@
 class Book:
-    """Base class representing a book."""
-
     def __init__(self, title, author):
         self.title = title
         self.author = author
@@ -9,40 +7,28 @@ class Book:
         return f"Book: {self.title} by {self.author}"
 
     def display(self):
-        print(f"Book: {self.title} by {self.author}")
+        print(str(self))
 
 
 class EBook(Book):
-    """Derived class representing an electronic book."""
-
     def __init__(self, title, author, file_size):
         super().__init__(title, author)
         self.file_size = file_size
 
     def __str__(self):
-        return f"Ebook: {self.title} by {self.author}, File Size: {self.file_size}KB"
-
-    def display(self):
-        print(f"Ebook: {self.title} by {self.author}, File Size: {self.file_size}KB)")
+        return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
 
 
 class PrintBook(Book):
-    """Derived class representing a printed book."""
-
     def __init__(self, title, author, page_count):
         super().__init__(title, author)
         self.page_count = page_count
 
     def __str__(self):
-        return f"PrintBook: {self.title} by {self.author}, Pages: {self.page_count}"
-
-    def display(self):
-        print(f"PrintBook: {self.title} by {self.author}, Pages: {self.page_count}")
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 
 class Library:
-    """Library class demonstrating composition."""
-
     def __init__(self):
         self.books = []
 
