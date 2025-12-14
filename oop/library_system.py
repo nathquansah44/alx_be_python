@@ -1,4 +1,6 @@
 class Book:
+    """Base class representing a book."""
+
     def __init__(self, title, author):
         self.title = title
         self.author = author
@@ -11,6 +13,8 @@ class Book:
 
 
 class EBook(Book):
+    """Derived class representing an electronic book."""
+
     def __init__(self, title, author, file_size):
         super().__init__(title, author)
         self.file_size = file_size
@@ -20,6 +24,8 @@ class EBook(Book):
 
 
 class PrintBook(Book):
+    """Derived class representing a printed book."""
+
     def __init__(self, title, author, page_count):
         super().__init__(title, author)
         self.page_count = page_count
@@ -29,6 +35,8 @@ class PrintBook(Book):
 
 
 class Library:
+    """Library class demonstrating composition."""
+
     def __init__(self):
         self.books = []
 
